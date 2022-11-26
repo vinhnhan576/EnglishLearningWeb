@@ -41,8 +41,8 @@
 
 .flashcard .front .container,
 .flashcard .back .container {
-    width: 95%;
-    height: 92%;
+    width: 93%;
+    height: 95%;
     
     border-radius: 2px;
     position: absolute;
