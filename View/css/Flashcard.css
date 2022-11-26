@@ -1,3 +1,4 @@
+@import url(./variables.css);
 /* The front tone of the card is mainly bright/warm while the back's color is dark/cold */
 
 .flashcard{
@@ -6,8 +7,8 @@
     align-items: center;
     justify-content: center;
 
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     transform-style: preserve-3d;
     transition: all .35s ease;
 }
@@ -30,11 +31,11 @@
 }
 
 .flashcard .front {
-    background-color: #fae282;
+    background-color: var(--main-color-light);
 }
 
 .flashcard .back{
-    background-color: #469990;
+    background-color: var(--sub-color-middle);
     transform: rotateY(180deg);
 }
 
@@ -43,7 +44,7 @@
     width: 95%;
     height: 92%;
     
-    border-radius: 3px;
+    border-radius: 2px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -52,11 +53,11 @@
 }
 
 .flashcard .front .container{
-    border: 3px solid #f0bf72;
+    border: 3px solid var(--main-color-middle);
 }
 
 .flashcard .back .container {
-    border: 3px solid #367978;
+    border: 3px solid var(--sub-color-dark);
 }
 
 .flashcard .front .img-container{
@@ -64,23 +65,25 @@
 }
 
 .front .img-container img {
-    width: 400px;
+    width: 300px;
     height: 200px;
     object-fit: cover;
     filter: saturate(70%);
 }
 
 .flashcard .front .word {
-    color: #367978;
+    color: var(--main-color-dark);
     font-size: 36pt;
 }
 
 .flashcard .back .word-type{
     font-size: 28pt;
-    color: #f0bf72;
+    color: var(--sub-color-dark);
 }
 
 .flashcard .back .meaning {
     font-size: 21pt;
-    color: #fae282;
+    color: var(--main-color-light);
+    text-align: center;
+    margin: 0 10px;
 }
